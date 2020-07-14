@@ -1,0 +1,36 @@
+<html>
+<head>
+<Title> Difference between var let const</Title>
+
+</head>
+
+<body>
+<script>
+//var can be declared globally,it can be updated and re-declared with n its scope.
+var a= "Ajay";
+var a="vijay";
+a="pranay";
+console.log(a);
+
+//in the above it is re-declared and updated
+
+//let is block scoped,it can be updated but not re-declared
+{
+let a="Gowtham";
+console.log(a);
+a="Ajay";
+console.log(a);
+//let a="Vijay"; error occurs as re-declaration not possible
+
+}
+//const is also block scoped,it can neither be updated nor re declared.
+{
+const a="Raghu";
+console.log(a);
+//const a="Ajay"; occurs error as we cannot re-declare
+//a="Ajay"; occurs error as we cannot update 
+}
+</script>
+
+</body>
+</html>
